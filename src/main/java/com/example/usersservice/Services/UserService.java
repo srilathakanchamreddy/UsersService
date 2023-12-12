@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 public class UserService {
-    private UserRepositary userRepositary;
+    private final UserRepositary userRepositary;
     private RoleService roleService;
 
     UserService(UserRepositary userRepositary) {

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RoleService {
-    private RolesRepositary rolesRepositary;
+    private final RolesRepositary rolesRepositary;
     RoleService(RolesRepositary rolesRepositary) {
         this.rolesRepositary = rolesRepositary;
     }
